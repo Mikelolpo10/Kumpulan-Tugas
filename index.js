@@ -1,7 +1,7 @@
 const imageSource = {
-  rock: "/rock-emoji.png",
-  paper: "/paper-emoji.png",
-  scissors: "/scissors-emoji.png",
+  rock: "rock-emoji.png",
+  paper: "paper-emoji.png",
+  scissors: "scissors-emoji.png",
 };
 
 const scores = {
