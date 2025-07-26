@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Calculator/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator Mike</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="result-container">
+        <span class="history">0</span>
+        <span class="result">0</span>
+      </div>
+      <div class="main-body">
+        <button class="button-reset">AC</button>
+        <button class="button-backspace" title="backspace">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button class="button-percentage" value="%">%</button>
+        <button class="button-operation" value="/" title="divide">
+          <i class="fa-solid fa-divide"></i>
+        </button>
+
+        <button class="button-number" value="7">7</button>
+        <button class="button-number" value="8">8</button>
+        <button class="button-number" value="9">9</button>
+        <button class="button-operation" value="*" title="multiplication">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="button-number" value="4">4</button>
+        <button class="button-number" value="5">5</button>
+        <button class="button-number" value="6">6</button>
+        <button class="button-operation" value="-">-</button>
+
+        <button class="button-number" value="1">1</button>
+        <button class="button-number" value="2">2</button>
+        <button class="button-number" value="3">3</button>
+        <button class="button-operation" value="+">+</button>
+
+        <button class="button-change-menu" title="change-menu">
+          <img src="/Calculator/change-menu.png" alt="change-menu" />
+        </button>
+        <button class="button-number" value="0">0</button>
+        <button class="button-operation" value=".">,</button>
+        <button class="button-result" title="equals">
+          <i class="fa-solid fa-equals"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="/Calculator/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/303c5d1757.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
