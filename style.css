@@ -70,9 +70,7 @@ body {
   font-size: 60px;
   font-weight: bold;
   backdrop-filter: blur(10px);
-  text-shadow:
-    0 0 8px rgba(0, 247, 255, 0.8),
-    0 0 16px rgba(45, 234, 255, 0.6),
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.8), 0 0 16px rgba(45, 234, 255, 0.6),
     0 0 24px rgba(0, 208, 255, 0.4); /* warna kuning menyebar */
   z-index: 999;
 }
@@ -110,7 +108,7 @@ body {
   aspect-ratio: 1 / 1;
 
   img {
-    width: 80%;
+    width: 50%;
   }
 }
 
