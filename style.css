@@ -1,13 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   position: relative;
   margin: 0;
   height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
+  width: 100vw;
   background-color: #212121;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -38,11 +33,11 @@ body {
   align-items: center;
   rotate: 180deg;
   width: 100%;
-}
 
-.computer-move-display img {
-  width: 60%;
-  aspect-ratio: 1 / 1;
+  img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .player-move-display {
@@ -53,11 +48,11 @@ body {
   align-items: center;
   width: 100%;
   z-index: 0;
-}
 
-.player-move-display img {
-  width: 60%;
-  aspect-ratio: 1 / 1;
+  img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .move-display-active {
@@ -70,11 +65,13 @@ body {
   width: 100%;
   text-align: center;
   color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 60px;
   font-weight: bold;
   backdrop-filter: blur(10px);
   text-shadow: 0 0 8px rgba(0, 247, 255, 0.8), 0 0 16px rgba(45, 234, 255, 0.6),
-    0 0 24px rgba(0, 208, 255, 0.4);
+    0 0 24px rgba(0, 208, 255, 0.4); /* warna kuning menyebar */
   z-index: 999;
 }
 
@@ -94,9 +91,9 @@ body {
   padding: 0.5rem 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
   height: 47%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .player-move {
@@ -104,14 +101,14 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 100%;
+  width: 80%;
   background-color: #bbe1fa;
   box-shadow: -2px 1px 5px rgb(85, 63, 255);
   aspect-ratio: 1 / 1;
-}
 
-.player-move img {
-  width: 50%;
+  img {
+    width: 50%;
+  }
 }
 
 .footer-container {
@@ -126,18 +123,18 @@ body {
   width: 50%;
   border-radius: 0 1rem 0 0;
   background-color: rgb(50, 22, 88);
-}
 
-.history-container h2 {
-  margin-top: 10px;
-  margin-bottom: 0;
-  color: white;
-}
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+  }
 
-.history-container p {
-  margin-top: 0;
-  width: 80%;
-  color: white;
+  p {
+    margin-top: 0;
+    width: 80%;
+    color: white;
+  }
 }
 
 .button-container {
@@ -145,50 +142,13 @@ body {
   flex-direction: column;
   align-items: end;
   width: 50%;
-}
 
-.button-container button {
-  margin-bottom: 1rem;
-  border: none;
-  background-color: rgb(0, 255, 170);
-  height: 30%;
-  width: 75%;
-  font-size: 20px;
-}
-
-/* ✅ Responsive untuk layar HP */
-@media screen and (max-width: 480px) {
-  .player-move-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-  }
-
-  .player-move img {
-    width: 70%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .history-container,
-  .button-container {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  .button-container button {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .scores-container {
+  button {
+    margin-bottom: 1rem;
+    border: none;
+    background-color: rgb(0, 255, 170);
+    height: 30%;
+    width: 75%;
     font-size: 20px;
-  }
-
-  .result {
-    font-size: 40px;
   }
 }
